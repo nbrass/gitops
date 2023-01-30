@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Secret
+metadata:
+    annotations:
+        tekton.dev/git-0: https://github.com
+    creationTimestamp: null
+    name: git-host-basic-auth-token
+    namespace: cicd
+stringData:
+    password: ENC[AES256_GCM,data:PQQImGJCLNtRB2sRH52TQHtQ/40zQqo8OtGHnPP34/7EkW2buQjeds2O6YzA8/nkHduYB8BR7LalQjr95MCmx+zPXcmtG9U+mMqQkrHVEXgqcDrq6ljECkRX7DP6,iv:hxv/rC6nL+5NvhaR6Ro61ZqMsv0IMR2457HrQv5nU0g=,tag:culu9Mb+hAjjFH0zOhQ42g==,type:str]
+    username: ENC[AES256_GCM,data:tSlqJFU7,iv:O6TgPrjx51yfcY/x7johzGd4mXxAb46EOPa1uoIHv0k=,tag:Wn9RZ/eyzmUhV2vROM9IoA==,type:str]
+type: kubernetes.io/basic-auth
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1helqcqsh9464r8chnwc2fzj8uv7vr5ntnsft0tn45v2xtz0hpfwq98cmsg
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSArTzFWbWFOQzdmMVpHb2Fx
+            VGZWV3ZMVHFpWU1KQnk2cGRseFNXWXhON0RNCnVNT05LVW5kV0JiZXZiYlo2dXZG
+            ZURncDhpRmw2cEp1Ti9YVCtkYSs0R2cKLS0tIDkwcE1mc0RXQ2VQMWNHTmd6M0hE
+            NTg0WThqOHlKNkQ0RGdSTkRPRFcrU1EKKin3e+lVSE6MnTsVuZ0l3fuLpa69iljD
+            ktmUk5jUcnsgtHy593Lskvlsr7wJUsR3649gEE9MBJOhGqxgv2Jobg==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2023-01-30T15:07:07Z"
+    mac: ENC[AES256_GCM,data:XmvygqH+cY0312x5/hQRLXWXeveor6uFiQ0xwfdZ0ROuGvrdUgOVNUTMisRq+cZ6XNi/oG+H5Gy2shaWyDzmN5Pc6KiSvyz8uHwyZid+8G2bLaBY3G+vbJDa67vVXy9dbKbeqd/sd3pGhcwyV3BXkzzmypLGFnWpZhe5f9MN+/o=,iv:eYfn1e/UOK75JIaIGuXI9faCohnDGDZ5M2fNMzoP6Ak=,tag:0lOTes9R39Qwr3yCroCgyg==,type:str]
+    pgp: []
+    encrypted_regex: ^(data|stringData)$
+    version: 3.7.3

@@ -1,0 +1,29 @@
+apiVersion: v1
+data:
+    token: ENC[AES256_GCM,data:1nxavLgcHeTjILzNqTSlLJ2cHajIDJI6rn0dtSzLE6gX3DnX+t0wY4ZjSsdNLpi5TkafRs92OJdeShzdTfb6a4mFIFcbXCsfvoYLHHbXSrYkgKiNlE4trplFwZepqGBJ2Sv4AHDt8/vgYV1pIwjSWOEizb9HlaelwNNswA==,iv:b+xoXnAD6SFNVeAdk3Yqz5QWGtmKNRfuWfm1bNsn3V4=,tag:xuzKKs/rgXdoWMYowmSMVw==,type:str]
+kind: Secret
+metadata:
+    creationTimestamp: null
+    name: git-host-access-token
+    namespace: cicd
+type: Opaque
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1helqcqsh9464r8chnwc2fzj8uv7vr5ntnsft0tn45v2xtz0hpfwq98cmsg
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBneVlSSVlYRzhva3p4VkJ1
+            TzRBdnp5dTFXMWZaaVl6RGsxa2lEZjRzUHk4CkFHUlpwcnh5RDh5MklGK1pGK2l5
+            ZU5oMzRaamo2K3FUc3krTHBPYlc2M0kKLS0tIElaS2NrenE3S0JiQ01tTW1BOVVX
+            SUFsTkN6S3JzcUZNa1F0QVdPejZOMWsKtlIk9bt/Cd5U2kIN1NDDUy3xLbDabgXW
+            2cTFJEKg45ux34KqtnERstEuvuO/LmINQkuN2Xq89dhcpto6GNN9eA==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2023-01-30T15:06:56Z"
+    mac: ENC[AES256_GCM,data:WStebBPoc6pv8UwU4hufBkpsdDCV9g5k857ir4Lqq7XnRl3jJgeuyHoFCB4DpfQiGKp9myjXgaLV3yQ2kK62FJXun5BrMrTHVmOY6DYgzMTYc9qGsfaZzMCt5P0s7Cil+Fg+xZON33eaHbDqQ90G6n+qusXGOutpLHfRDHvbur4=,iv:CA4GKjvfI6rmVYzxRqxwqFHr8IR40Bbz2H+1ibUq1+Q=,tag:FH+QveeTFRpnz2tber4lgg==,type:str]
+    pgp: []
+    encrypted_regex: ^(data|stringData)$
+    version: 3.7.3

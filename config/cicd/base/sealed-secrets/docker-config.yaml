@@ -1,0 +1,29 @@
+apiVersion: v1
+data:
+    .dockerconfigjson: ENC[AES256_GCM,data:frux2693GHfA+/oxVToNpAzG+kdtkEZzrLEfihifdeTEhuCkTHzAilUNE5KbYkTFRLytMEP3HqEXhPZb1VSSER+c1EezmPexC9YY5lyhufm3Fsa5DNnbbCyUrEYQPITloLH9Ndr2XzgZVruTQUOhXflqZtFdXZ0iKCNazr054Yo=,iv:JSEfPPWw26SM7DY8AZ8C9OIH+jgzTysCJdAyFA5ax7E=,tag:JTaLsHhoKWRd+j2p4Gcnlw==,type:str]
+kind: Secret
+metadata:
+    creationTimestamp: null
+    name: regcred
+    namespace: cicd
+type: kubernetes.io/dockerconfigjson
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1helqcqsh9464r8chnwc2fzj8uv7vr5ntnsft0tn45v2xtz0hpfwq98cmsg
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBub3pPck15NzgwbVNoaUc5
+            UGYyRzk3WXQreE45V3BSZ3ZHVTR2ZVgrQWowCkpLd1FUeXg2dXEyTnZjOXNVY29I
+            dTRJb3VVV2VvTzVsRmtacjA1Rk5pMFkKLS0tIEFRMTFMN3EzQ0wrbDdUN29mcitz
+            TGx0OWREcWVjSXJWRHEva2p6QVQvL1UKSjbj1XwReuOGVWsjTReG34C5+3krJmBl
+            quJWiEKtRYFKXCe+rjnBSSglwPrY30QVi8xA3H4ZXVw8ncPUM4aAMw==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2023-01-30T15:05:25Z"
+    mac: ENC[AES256_GCM,data:y0lBZG4NFX9Fa6odVoXtDTUl+qAWwnZ6qubQZB7aX0Z7KWDEVeeMakPwyAhT8wYrg22VTsAfiOUqfrfh2hkW9zdBBlBL0ri2DwSvhQjEnPdyWVBZlpqA34j7ISJtKUtys6No/ulhkBhiLROZAFL7Zfp45MNCZW7Aw67RvmOgzR4=,iv:xFXyvJrsuZoFKUMVe8CTnn4AfOUJDRCWe1oKwTEmcFQ=,tag:qVqSNdluvlk6maPNZrf/+g==,type:str]
+    pgp: []
+    encrypted_regex: ^(data|stringData)$
+    version: 3.7.3
